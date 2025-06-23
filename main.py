@@ -5,6 +5,8 @@
 
 # import streamlit as st
 
+import uvicorn
+
 
 
 from typing import Union
@@ -51,6 +53,8 @@ def update_item(item_id: int, item: Item):
 
 
 
+if __name__ == '__main__':
+    uvicorn.run("main:app", port=8000, reload=True)
 
 
 
@@ -90,9 +94,10 @@ def update_item(item_id: int, item: Item):
 
 #     print("hello word")
 
-#     print("I love you")
+    # print("I love you")
 
-#     st.write("测试")
+
+    # st.write("测试")
 
 
 
